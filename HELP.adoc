@@ -1,0 +1,13 @@
+# Ditto FixDB
+
+Tooling to save as match as possible from a broken ditto sqlite DB.
+
+## how it works
+
+. read only on life DB
+. write only on new target DB -- must not be the same
+. each table is copied chunk-wise. If a chuck fails, it's broken into smaller chunks.
+.. This is done recursively (ie like binary search)
+.. the target DB contains a table to remember chucks and state
+. cleanup
+..  If FKs are broken, then all dangling records are removed
