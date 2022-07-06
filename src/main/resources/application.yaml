@@ -5,8 +5,12 @@ spring:
     banner-mode: OFF
   datasource:
     driver-class-name: org.sqlite.JDBC
-    url: jdbc:sqlite:target/target-Ditto.db
+    url: jdbc:sqlite:target/test-classes/sample.db
   jpa:
     properties:
       hibernate:
         dialect: de.tomsit.ditto.fixdb.infrastructure.jpa.SQLiteDialect
+
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
