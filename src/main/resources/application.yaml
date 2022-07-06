@@ -1,1 +1,12 @@
+#debug: true
 
+spring:
+  main:
+    banner-mode: OFF
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:target/target-Ditto.db
+  jpa:
+    properties:
+      hibernate:
+        dialect: de.tomsit.ditto.fixdb.infrastructure.jpa.SQLiteDialect
