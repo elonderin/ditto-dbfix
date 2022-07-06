@@ -1,4 +1,4 @@
-package com.example.ditto.fixdb;
+package de.tomsit.ditto.fixdb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,10 +1,10 @@
-package com.example.ditto.fixdb;
+package de.tomsit.ditto.fixdb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DittoFixdbApplicationTests {
+class DittoFixdbApplicationIT {
 
   @Test
   void contextLoads() {
